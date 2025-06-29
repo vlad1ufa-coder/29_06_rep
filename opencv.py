@@ -28,7 +28,7 @@ while cap.isOpened(): # метод isOpened() выводит статус вид
     (x, y, w, h) = cv2.boundingRect(contour) # преобразование массива из предыдущего этапа в кортеж из четырех координат
    
     # метод contourArea() по заданным contour точкам, здесь кортежу, вычисляет площадь зафиксированного объекта в каждый момент времени, это можно проверить
-    #print(cv2.contourArea(contour))
+    print(cv2.contourArea(contour))
    
     if cv2.contourArea(contour) < 700: # условие при котором площадь выделенного объекта меньше 700 px
       continue
